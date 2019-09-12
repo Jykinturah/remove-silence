@@ -1,7 +1,6 @@
-*.env
-.env
 .DS_Store
 /node_modules
 /music/*
 /out/*
 npm-debug.log
+!**/README.md

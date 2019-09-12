@@ -1,0 +1,22 @@
+{
+  "name": "remove-silence",
+  "version": "0.1.0",
+  "description": "Removes silence from start of songs using ffmpeg",
+  "main": "remove-silence.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jykinturah/remove-silence.git"
+  },
+  "author": "Jykinturah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jykinturah/remove-silence/issues"
+  },
+  "homepage": "https://github.com/Jykinturah/remove-silence#readme",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
