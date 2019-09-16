@@ -72,8 +72,11 @@ const getSongsList = async (path) => {
 
 const removeSilence = (inputPath,outputPath,song,silenceDuration) => {
   ffmpeg(inputPath + song)
+    .addOption('-y')
     .seekOutput(convertToTimeString(silenceDuration - SILENCE_GRACE_PERIOD))
-    .addOption('-acodec copy')
+    .addOption('-write_xing 0')
+    .addOption('-codec copy')
+    .addOption('-map_metadata 0')
     .output(outputPath + song)
     .on('end', (stdout, stderr) => { console.log('Processed Silence for ' + song) } )
     .run();
